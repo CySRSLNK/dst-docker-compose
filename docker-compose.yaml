@@ -1,0 +1,28 @@
+services:
+  dst:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dst-server:local
+    container_name: dst-server
+    platform: linux/amd64
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 2m
+
+    environment:
+      CONF_DIR: DoNotStarveTogether
+      CLUSTER_NAME: Cluster_1
+      ENABLE_CAVES: "true"
+
+    volumes:
+      - .klei:/root/.klei
+
+    ports:
+      - "10998-10999:10998-10999/udp"
+      - "10888:10888/udp"
+      - "27017:27017/udp"
+      - "8767:8767/udp"
+
+    tty: true
+    stdin_open: false
