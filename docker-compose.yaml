@@ -16,6 +16,7 @@ services:
       ENABLE_CAVES: "true"
 
     volumes:
+      - Local_Collection_Skins:/root/dontstarvetogether_dedicated_server/mods/Local_Collection_Skins
       - .klei:/root/.klei
       - ./dedicated_server_mods_setup.lua:/root/dontstarvetogether_dedicated_server/mods/dedicated_server_mods_setup.lua
 
