@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e  # 遇到错误立即退出
+
+STEAMCMD_DIR="/root/Steamcmd"
+INSTALL_DIR="/root/dontstarvetogether_dedicated_server"
+APP_ID=343050
+
+echo "=== 开始安装/更新饥荒联机版专用服务器 (AppID: ${APP_ID}) ==="
+
+# 检查 steamcmd.sh 是否存在
+if [ ! -f "${STEAMCMD_DIR}/steamcmd.sh" ]; then
+    echo "错误: 未找到 ${STEAMCMD_DIR}/steamcmd.sh，请先安装 SteamCMD"
+    exit 1
+fi
+
+# 运行 SteamCMD
+"${STEAMCMD_DIR}/steamcmd.sh" \
+  +force_install_dir "${INSTALL_DIR}" \
+  +login anonymous \
+  +app_update "${APP_ID}" validate \
+  +quit
+
+echo "=== 安装/更新完成 ==="
