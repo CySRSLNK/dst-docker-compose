@@ -1,6 +1,0 @@
-
-
-[2026-11-07 19:50:18] Client version: 1792617903
-[2026-11-07 19:50:18] ThreadedReadFromDisk: loading appinfo cache from: /home/cs/Steam/appcache/appinfo.vdf
-[2026-11-07 19:50:18] ThreadedReadFromDisk: failed to open file: /home/cs/Steam/appcache/appinfo.vdf
-[2026-11-07 19:50:18] CAppInfoCacheReadFromDiskThread took 1 milliseconds to initialize

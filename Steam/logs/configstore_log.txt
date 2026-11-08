@@ -1,9 +1,0 @@
-
-
-[2026-11-07 19:50:18] Client version: 1792617903
-[2026-11-07 19:50:18] Failed to read store 'install' from '/home/cs/Steam/config/config.vdf.tmp'
-[2026-11-07 19:50:18] Failed to read store 'install' from '/home/cs/Steam/config/config.vdf.tmp'
-[2026-11-07 19:50:18] Failed to read store 'install' from '/home/cs/Steam/config/config.vdf.tmp'
-[2026-11-07 19:50:19] Flushed store 'install' to '/home/cs/Steam/config/config.vdf'
-[2026-11-07 19:50:21] Flushed store 'install' to '/home/cs/Steam/config/config.vdf'
-[2026-11-07 19:50:22] Flushed store 'install' to '/home/cs/Steam/config/config.vdf'
